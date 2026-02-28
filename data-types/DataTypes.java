@@ -5,7 +5,10 @@ class DataTypes {
         System.out.println("---------------------------------------------");
         System.out.println("# Welcome to java basics #");
         System.out.println("---------------------------------------------");
+
         // ==========  Primitive data types ========== 
+        // Primitive types store actual values directly in memory.
+        // Stack Memory
         System.out.println("=====  Primitive data types =====");
 
         // 1) Byte:
@@ -46,6 +49,7 @@ class DataTypes {
         // Size: 2 bytes
         // Stores single character
         char charVal = '@';
+        // char charVal = "@";   -> String
         System.err.println("charVal:" + charVal);
 
         // 7) Boolean
@@ -53,5 +57,37 @@ class DataTypes {
         // Values: true or false
         boolean booleanVal = true;
         System.err.println("booleanVal:" + booleanVal);
+
+// -------------------------------------------------------------------------------
+// ==========  Non-Primitive data types ========== 
+// -------------------------------------------------------------------------------
+        // These store reference (address) of objects, not actual value.
+        //  Heap Memory
+        System.out.println("=====  Non-primitive data types =====");
+
+        // 1. String
+        // Stores sequence of characters.
+        String name = "Saurabh";
+        System.err.println("String: " + name);
+
+        // 2. Array
+        // Stores multiple values of same type.
+        String[] city = {"nanded", "mumbai", "pune"};
+        System.err.println("Array: " + city[0]);
+
+        // 3. Class
+        // Blueprint for objects.
+        class Student {
+
+            int id;
+            String name;
+        }
+        System.err.println("Array: " + city[0]);
+
+        // 4. Object
+        // Instance of class.
+        Student s1 = new Student();
     }
+        // 5. Interface
+        
 }
