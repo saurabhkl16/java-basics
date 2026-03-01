@@ -1,0 +1,4 @@
+E → Encapsulation → Protect Data
+I → Inheritance → Reuse Code
+P → Polymorphism → Many Forms
+A → Abstraction → Hide Logic
