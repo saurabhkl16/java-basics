@@ -13,8 +13,13 @@ class Dog implements Animal {
 
 class InterfaceExample {
 
+    static void run() {
+        System.out.println(".()");
+    }
+
     public static void main(String[] args) {
         Dog moti = new Dog();
+        run();
         moti.sound();
     }
 }
