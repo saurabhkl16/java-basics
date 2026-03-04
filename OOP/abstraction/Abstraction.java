@@ -15,7 +15,9 @@ class Car extends Vehicle {
 class Abstraction {
 
     public static void main(String[] args) {
+        // Vehicle vc = new Vehicle(); -> wrong & limited only one extend.
+        Vehicle vc = new Car();
         Car nano = new Car();
-        nano.start();
+        vc.start();
     }
 }
