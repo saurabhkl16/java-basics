@@ -16,7 +16,7 @@ class HashSetBasic {
         hs.add(21);
         hs.add(31);
         hs.add(1);
-        System.out.println(hs);
+        System.out.println(hs.size());
 
         TreeSet<Integer> set = new TreeSet<>();
         // ✅ Sorted automatically
