@@ -1,5 +1,5 @@
 // 1️⃣ Compile Time Polymorphism
-//    (Method Overloading)
+//    -> (Method Overloading) # imp #
 
 class MathOp {
 
@@ -15,8 +15,10 @@ class MathOp {
 }
 
 // 2️⃣ Runtime Polymorphism
-//    (Method Overriding)
+//    -> (Method Overriding) # imp #
 class Animal {
+
+    String type;
 
     void sound() {
         System.out.println("Animmal sound");
@@ -24,6 +26,8 @@ class Animal {
 }
 
 class Dog extends Animal {
+
+    String name;
 
     void sound() {
         System.out.println("Dog barks");
@@ -37,7 +41,12 @@ class Polymorphism {
         System.out.println(a.add(122.45, 32.23));
         System.out.println(a.add(2, 3));
 
+        // Give compaile time error 
+        // Animal moti = new Dog();
+        // moti.name = "Sdsd";
         Dog moti = new Dog();
         moti.sound();
+        moti.type = "sdsd";
+        moti.name = "Sdsd";
     }
 }
